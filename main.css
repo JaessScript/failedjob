@@ -1,3 +1,19 @@
+html {
+    /* border-box box model allows us to add padding and border 
+    to our elements without increasing their size */
+    box-sizing: border-box;
+}
+
+/*
+    We inherit box-sizing: border-box; from our <html> selector
+    Apparently this is a bit better than applying box-sizing: border-box; directly to the * selector
+  */
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
 body {
     overflow: auto;
     font-family: Verdana, Arial, Tahoma, Serif;
@@ -9,7 +25,8 @@ canvas {
 
 .wrapper {
     display: grid;
-    grid-gap: 20px;
+    padding-right: 10px;
+    padding-bottom: 10px;
     grid-template-areas:
         "header"
         "middle"
@@ -42,6 +59,10 @@ canvas {
 
     text-align: left;
     background: deepskyblue;
+}
+
+.wrapper-middle>* {
+    flex: 1 100%;
 }
 
 .aside-1 {
