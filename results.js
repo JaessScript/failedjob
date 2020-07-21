@@ -36,3 +36,4 @@ pbsolving.setAttribute("value", pbsolving_val);
 let ambition = document.getElementById('ambition');
 let ambition_val = Math.floor(Math.random()*(max-min+1)+min);
 ambition.setAttribute("value", ambition_val);
+

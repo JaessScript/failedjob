@@ -6,7 +6,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<title>failedjob</title>
+	<title>Oh no!</title>
 
 	<script src="libraries/p5.js"></script>
 	<script src="libraries/p5.dom.js"></script>
@@ -133,6 +133,9 @@
 					were randomly assigned. No facial recognition, eye tracking or any of the above methods have
 					actually been used.
 				</p>
+				<br/>
+				<label for="print">Would you like to print your results?</label>
+				<button onclick="display()">Print!</button>
 			</div>
 
 			<aside class="aside-2"></aside>
@@ -142,6 +145,11 @@
 	</div>
 
 	<script src="results.js"></script>
+	<script>
+		function display() {
+			window.print();
+		}
+	</script>
 </body>
 
 </html>
