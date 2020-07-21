@@ -25,14 +25,18 @@ canvas {
 }
 
 .header {
+    grid-area: header;
     background: tomato;
 }
 
 .footer {
+    grid-area: footer;
     background: lightgreen;
 }
 
 .wrapper-middle {
+    grid-area: middle;
+    padding: 10px;
     display: flex;
     flex-direction: row wrap;
 
