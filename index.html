@@ -13,126 +13,135 @@
 	<script src="libraries/p5.sound.js"></script>
 	<script src="sketch.js"></script>
 
-	<style>
-		body {
-			margin: 0;
-			padding: 0;
-			overflow: hidden;
-		}
-
-		canvas {
-			margin: auto;
-		}
-	</style>
+	<link rel="stylesheet" href="main.css">
 </head>
 
 <body>
 
-	<h1>Here Are Your Results!</h1>
+	<div class="wrapper">
 
-	<p>
-		Thanks for your interest in working with us. We have reviewed your
-		application and decided to move forward with other candidates who
-		are a closer match for this particular role. We’re sorry that we
-		don’t have better news, and we appreciate the effort you put into
-		your application. Please don’t be discouraged from applying for other
-		jobs at our company – we’d love to hear from you whenever you spot an
-		opportunity that interests you! <br /><br />
-		In order to come with this decision,
-		we have implemented an AI algorithm that tracks and analyses your facial
-		expression, posture, eye movements, speed, and style of typing. The
-		answers you provided have not been taken into consideration at any point.
-		Below you will find all the categories we have analysed and the percentages
-		you received. <br /><br />
-		Our 99%-accurate state-of-the-art AI algorithm found the
-		following results:
-	</p>
-	<br />
+		<header class="header">Here Are Your Results!</header>
 
-	<p>CONFIDENCE :</p>
-	<progress id="confidence" value="" max="100"></progress>
-	<p>MOTIVATION :</p>
-	<progress id="motivation" value="" max="100"></progress>
-	<p>LEADERSHIP SKILLS :</p>
-	<progress id="leadership" value="" max="100"></progress>
-	<p>ATTENTION :</p>
-	<progress id="attention" value="" max="100"></progress>
-	<p>ASSERTIVENESS :</p>
-	<progress id="assertiveness" value="" max="100"></progress>
-	<p>TEAM PLAYER SKILLS :</p>
-	<progress id="teamplayer" value="" max="100"></progress>
-	<p>HONESTY :</p>
-	<progress id="honesty" value="" max="100"></progress>
-	<p>PROBLEM SOLVING SKILLS :</p>
-	<progress id="pbsolving" value="" max="100"></progress>
-	<p>AMBITION :</p>
-	<progress id="ambition" value="" max="100"></progress>
-	<br /><br />
+		<div class="wrapper-middle">
 
-	<h2>Eye tracking</h2>
-	<p>
-		Your eye movement helps our algorithm to determine if you were focusing.
-		Wandering eyes are a sign of desinteress, lack of attention, and can
-		sometimes also designate low cognitive abilities or more serious mental
-		disorders.
-	</p>
+			<aside class="aside-1"></aside>
 
-	<h2>Posture</h2>
-	<p>
-		Your posture, meaning the way you stand, the position of your chin, face
-		and shoulders address your attitude towards responsabilities. Studies have
-		proven that these attributes correlate with confidence, motivation and leadership
-		skills. Leaning back suddenly suggests defensiveness and problems dealing with authority.
-		Remaining stiff or moving only one shoulder can be a strong indicator of the candidate
-		trying to lie or hiding important facts. Leaning forward, on the other hand, points out
-		a lack of confidence and may indicate persistant childhood traumas.
-	</p>
+			<div class="main">
+				<p>
+					Thanks for your interest in working with us. We have reviewed your
+					application and decided to move forward with other candidates who
+					are a closer match for this particular role. We’re sorry that we
+					don’t have better news, and we appreciate the effort you put into
+					your application. Please don’t be discouraged from applying for other
+					jobs at our company – we’d love to hear from you whenever you spot an
+					opportunity that interests you! <br /><br />
+					In order to come with this decision,
+					we have implemented an AI algorithm that tracks and analyses your facial
+					expression, posture, eye movements, speed, and style of typing. The
+					answers you provided have not been taken into consideration at any point.
+					Below you will find all the categories we have analysed and the percentages
+					you received. <br /><br />
+					Our 99%-accurate state-of-the-art AI algorithm found the
+					following results:
+				</p>
+				<br />
 
-	<h2>Facial expression</h2>
-	<p>
-		The movement of your eyebrows, chicks, mouth and forehead allows our algorithm
-		to detect your current emotional state; happiness, sadness, agressiveness, enthusiasm,
-		reliability, empathy and motivation. Research has shown that employees with emotions
-		measures outside of average intervals will have difficulties integrating the company.
-		This lack of integration can lead to insubordination, create a climate of dissidence
-		and undermine the success of the corporation.
-	</p>
+				<p>CONFIDENCE :</p>
+				<progress id="confidence" value="" max="100"></progress>
+				<p>MOTIVATION :</p>
+				<progress id="motivation" value="" max="100"></progress>
+				<p>LEADERSHIP SKILLS :</p>
+				<progress id="leadership" value="" max="100"></progress>
+				<p>ATTENTION :</p>
+				<progress id="attention" value="" max="100"></progress>
+				<p>ASSERTIVENESS :</p>
+				<progress id="assertiveness" value="" max="100"></progress>
+				<p>TEAM PLAYER SKILLS :</p>
+				<progress id="teamplayer" value="" max="100"></progress>
+				<p>HONESTY :</p>
+				<progress id="honesty" value="" max="100"></progress>
+				<p>PROBLEM SOLVING SKILLS :</p>
+				<progress id="pbsolving" value="" max="100"></progress>
+				<p>AMBITION :</p>
+				<progress id="ambition" value="" max="100"></progress>
+				<br /><br />
 
-	<h2>Speed and style of typing</h2>
-	<p>
-		The analysis of your speed and style of typing says a lot about your personality and
-		can even help compute your future productivity. It also says a lot about your assertiveness.
-		Candidates who type too slowly demonstrate low cognitive abilities along with an abnormally
-		low level of assertiveness. On the other hand, candidate typing too fast show precipitation
-		and low abilities for self reflection.
-	</p>
-	<p>
-		The combination of your performance on the 4 categories mentioned above also help us to determine
-		your team player abilities, ambition and your honesty during the application process. Low assertiveness
-		and emotions usually connotated as negative will usually lead to poor team player abilities. Low cognitive
-		abilities and low assertiveness also indicates low ambition in your career. Finally, incoherent results are
-		a clear indicator that the candidate lied, or at least was not fully honest, which is incompatible with our
-		company values.
-	</p>
-	<br /><br />
+				<h2>Eye tracking</h2>
+				<p>
+					Your eye movement helps our algorithm to determine if you were focusing.
+					Wandering eyes are a sign of desinteress, lack of attention, and can
+					sometimes also designate low cognitive abilities or more serious mental
+					disorders.
+				</p>
 
-	<p>--------------------------------</p>
-	<h2>About the project</h2>
-	<p>"Are you a good fit for the job of your dreams?" aims to address future potential issues
-		with the use of algorithm in recruitment processes and, more generally, the evaluation
-		of qualitative attributes with quantitative methods. This algorithm relies on statistics;
-		means, averages and normal distributions help to categorize individuals into groups that
-		do not necessarily give justice to the complexity of a human being. These systems often
-		work as so called "black boxes", making it impossible for people affected by the decisions
-		to get an explanation of their results.
-	</p>
-	<p>Disclaimer: for this project we have not used any type of AI or algorithms. All the results
-		were randomly assigned. No facial recognition, eye tracking or any of the above methods have
-		actually been used.
-	</p>
+				<h2>Posture</h2>
+				<p>
+					Your posture, meaning the way you stand, the position of your chin, face
+					and shoulders address your attitude towards responsabilities. Studies have
+					proven that these attributes correlate with confidence, motivation and leadership
+					skills. Leaning back suddenly suggests defensiveness and problems dealing with authority.
+					Remaining stiff or moving only one shoulder can be a strong indicator of the candidate
+					trying to lie or hiding important facts. Leaning forward, on the other hand, points out
+					a lack of confidence and may indicate persistant childhood traumas.
+				</p>
+
+				<h2>Facial expression</h2>
+				<p>
+					The movement of your eyebrows, chicks, mouth and forehead allows our algorithm
+					to detect your current emotional state; happiness, sadness, agressiveness, enthusiasm,
+					reliability, empathy and motivation. Research has shown that employees with emotions
+					measures outside of average intervals will have difficulties integrating the company.
+					This lack of integration can lead to insubordination, create a climate of dissidence
+					and undermine the success of the corporation.
+				</p>
+
+				<h2>Speed and style of typing</h2>
+				<p>
+					The analysis of your speed and style of typing says a lot about your personality and
+					can even help compute your future productivity. It also says a lot about your assertiveness.
+					Candidates who type too slowly demonstrate low cognitive abilities along with an abnormally
+					low level of assertiveness. On the other hand, candidate typing too fast show precipitation
+					and low abilities for self reflection.
+				</p>
+				<p>
+					The combination of your performance on the 4 categories mentioned above also help us to determine
+					your team player abilities, ambition and your honesty during the application process. Low
+					assertiveness
+					and emotions usually connotated as negative will usually lead to poor team player abilities. Low
+					cognitive
+					abilities and low assertiveness also indicates low ambition in your career. Finally, incoherent
+					results
+					are
+					a clear indicator that the candidate lied, or at least was not fully honest, which is incompatible
+					with
+					our
+					company values.
+				</p>
+				<br /><br />
+
+				<p>--------------------------------</p>
+				<h2>About the project</h2>
+				<p>"Are you a good fit for the job of your dreams?" aims to address future potential issues
+					with the use of algorithm in recruitment processes and, more generally, the evaluation
+					of qualitative attributes with quantitative methods. This algorithm relies on statistics;
+					means, averages and normal distributions help to categorize individuals into groups that
+					do not necessarily give justice to the complexity of a human being. These systems often
+					work as so called "black boxes", making it impossible for people affected by the decisions
+					to get an explanation of their results.
+				</p>
+				<p>Disclaimer: for this project we have not used any type of AI or algorithms. All the results
+					were randomly assigned. No facial recognition, eye tracking or any of the above methods have
+					actually been used.
+				</p>
+			</div>
+
+			<aside class="aside-2"></aside>
+		</div>
+
+		<footer class="footer">Copyright</footer>
+	</div>
 
 	<script src="results.js"></script>
-
 </body>
 
 </html>
