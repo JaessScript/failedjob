@@ -74,18 +74,18 @@ img {
 }
 
 .aside-1 {
-    order: 1;
+    order: 0;
     flex-basis: 30%;
     /* background: gold; */
 }
 
 .main {
-    order: 2;
+    order: 1;
     padding: 10px;
 }
 
 .aside-2 {
-    order: 3;
+    order: 2;
     flex-basis: 30%;
     /* background: hotpink; */
 }
@@ -96,5 +96,5 @@ img {
 }
 
 .highlight {
-    background-color: yellow;
+    /* background-color: yellow; */
 }

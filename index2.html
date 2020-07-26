@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Oh no!</title>
+
+	<script src="libraries/p5.js"></script>
+	<script src="libraries/p5.dom.js"></script>
+	<script src="libraries/p5.sound.js"></script>
+	<script src="sketch.js"></script>
+
+	<link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+
+	<div class="wrapper">
+
+		<header class="header">
+			<img id="redcctvs" src="assets/thanksracist.gif" alt="animated" />
+			<h1>Here Are Your Results!</h1>
+		</header>
+
+		<div class="wrapper-middle">
+
+			<aside class="aside-1"></aside>
+
+			<div class="main">
+				<p>
+					Thanks for your interest in working with us. We have reviewed your
+					application and decided to move forward with other candidates who
+					are a closer match for this particular role. We’re sorry that we
+					don’t have better news, and we appreciate the effort you put into
+					your application. Please don’t be discouraged from applying for other
+					jobs at our company – we’d love to hear from you whenever you spot an
+					opportunity that interests you! <br /><br />
+					In order to come with this decision,
+					we have implemented an AI algorithm that tracks and analyses your <strong>
+						expression</strong>, <strong>posture</strong>, <strong>eye movements</strong>,
+					speed, and <strong>style of typing</strong>. The answers you provided have not
+					been taken into consideration at any point.
+				</p>
+				<img id="redcctvs" src="assets/facerecognition.gif" alt="animated" />
+				<br />
+				<p>Below you will find all the categories we have analysed and the percentages
+					found by our 99%-accurate state-of-the-art AI algorithm:</p>
+				<br />
+
+				<p>CONFIDENCE :</p>
+				<progress id="confidence" value="" max="100"></progress>
+				<p>MOTIVATION :</p>
+				<progress id="motivation" value="" max="100"></progress>
+				<p>LEADERSHIP SKILLS :</p>
+				<progress id="leadership" value="" max="100"></progress>
+				<p>ATTENTION :</p>
+				<progress id="attention" value="" max="100"></progress>
+				<p>ASSERTIVENESS :</p>
+				<progress id="assertiveness" value="" max="100"></progress>
+				<p>TEAM PLAYER SKILLS :</p>
+				<progress id="teamplayer" value="" max="100"></progress>
+				<p>HONESTY :</p>
+				<progress id="honesty" value="" max="100"></progress>
+				<p>PROBLEM SOLVING SKILLS :</p>
+				<progress id="pbsolving" value="" max="100"></progress>
+				<p>AMBITION :</p>
+				<progress id="ambition" value="" max="100"></progress>
+				<br /><br />
+
+				<h2>Eye tracking</h2>
+				<p>
+					Your eye movement helps our algorithm to determine if you were focusing.
+					Wandering eyes are a sign of desinteress, lack of attention, and can
+					sometimes also designate low cognitive abilities or more serious mental
+					disorders.
+				</p>
+
+				<h2>Posture</h2>
+				<p>
+					Your posture, meaning the way you stand, the position of your chin, face
+					and shoulders address your attitude towards responsabilities. Studies have
+					proven that these attributes correlate with confidence, motivation and leadership
+					skills. Leaning back suddenly suggests defensiveness and problems dealing with authority.
+					Remaining stiff or moving only one shoulder can be a strong indicator of the candidate
+					trying to lie or hiding important facts. Leaning forward, on the other hand, points out
+					a lack of confidence and may indicate persistant childhood traumas.
+				</p>
+
+				<h2>Facial expression</h2>
+				<p>
+					The movement of your eyebrows, chicks, mouth and forehead allows our algorithm
+					to detect your current emotional state; happiness, sadness, agressiveness, enthusiasm,
+					reliability, empathy and motivation. Research has shown that employees with emotions
+					measures outside of average intervals will have difficulties integrating the company.
+					This lack of integration can lead to insubordination, create a climate of dissidence
+					and undermine the success of the corporation.
+				</p>
+
+				<h2>Speed and style of typing</h2>
+				<p>
+					The analysis of your speed and style of typing says a lot about your personality and
+					can even help compute your future productivity. It also says a lot about your assertiveness.
+					Candidates who type too slowly demonstrate low cognitive abilities along with an abnormally
+					low level of assertiveness. On the other hand, candidate typing too fast show precipitation
+					and low abilities for self reflection.
+				</p>
+				<p>
+					The combination of your performance on the 4 categories mentioned above also help us to determine
+					your team player abilities, ambition and your honesty during the application process. Low
+					assertiveness and emotions usually connotated as negative will usually lead to poor team player 
+					abilities. Low cognitive abilities and low assertiveness also indicates low ambition in your career. 
+					Finally, incoherent results are a clear indicator that the candidate lied, or at least was not fully 
+					honest, which is incompatible with our company values.
+				</p>
+				<br /><br />
+
+				<p>--------------------------------</p>
+				<h2>About the project</h2>
+				<p><em>"Are you a good fit for the job of your dreams?"</em> aims to address future potential issues
+					with the use of algorithm in recruitment processes and, more generally, the <span class="highlight">evaluation
+					of qualitative attributes with quantitative methods</span>. This algorithm relies on statistics;
+					means, averages and normal distributions help to categorize individuals into groups that
+					do not necessarily give justice to the <span class="highlight">complexity of a human being</span>. These systems often
+					work as so called "black boxes", making it impossible for people affected by the decisions
+					to get an explanation of their results.
+				</p>
+				<p><em>Disclaimer: for this project we have not used any type of AI or algorithms. All the results
+					were randomly assigned. No facial recognition, eye tracking or any of the above methods have
+					actually been used.</em>
+				</p>
+				<br />
+				<label for="print" class="print">Would you like to print your results?</label>
+				<button onclick="display()">Print!</button>
+			</div>
+
+			<aside class="aside-2"></aside>
+		</div>
+
+		<footer class="footer"><a id="copyrights" href="https://jaessscript.github.io/mine/" title="Link to Copyrights pages">&copy; 2020 Copyrights!</a></footer>
+	</div>
+
+	<script src="results.js"></script>
+	<script>
+		function display() {
+			window.print();
+		}
+	</script>
+</body>
+
+</html>

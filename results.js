@@ -1,4 +1,4 @@
-let max = 25;
+let max = 40;
 let min = 3;
 
 let confidence = document.getElementById('confidence');
